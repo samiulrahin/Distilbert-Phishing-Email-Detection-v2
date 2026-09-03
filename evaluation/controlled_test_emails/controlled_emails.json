@@ -1,0 +1,75 @@
+[
+  {
+    "id": "controlled-001",
+    "expected_label": "legitimate",
+    "subject": "Project supervision meeting agenda",
+    "body": "Hello, the agenda for our scheduled supervision meeting is attached in the course workspace. We will discuss progress, risks, and next steps. Thank you."
+  },
+  {
+    "id": "controlled-002",
+    "expected_label": "legitimate",
+    "subject": "Library book return confirmation",
+    "body": "This confirms that your library book was returned today. No action is required. Your account now shows no items on loan."
+  },
+  {
+    "id": "controlled-003",
+    "expected_label": "legitimate",
+    "subject": "Weekly development update",
+    "body": "The local API tests now pass and the extension popup has been connected. The next task is to record the evaluation metrics in the project log."
+  },
+  {
+    "id": "controlled-004",
+    "expected_label": "legitimate",
+    "subject": "Receipt for campus printing",
+    "body": "Your campus printing balance was charged 2.50 GBP. This is an automated receipt for your records and no response is needed."
+  },
+  {
+    "id": "controlled-005",
+    "expected_label": "legitimate",
+    "subject": "Room change for Thursday lecture",
+    "body": "Thursday's lecture will take place in room 2B14 instead of 2B10. The start time remains 10:00."
+  },
+  {
+    "id": "controlled-006",
+    "expected_label": "legitimate",
+    "subject": "Report feedback available",
+    "body": "Feedback on your submitted draft is now available through the usual university learning platform. Please review it before the next meeting."
+  },
+  {
+    "id": "controlled-007",
+    "expected_label": "phishing",
+    "subject": "Urgent: account access expires today",
+    "body": "Your mailbox will be disabled today. Click https://account-check.example.invalid immediately and enter your password to verify your account."
+  },
+  {
+    "id": "controlled-008",
+    "expected_label": "phishing",
+    "subject": "Invoice payment overdue",
+    "body": "Final warning. The attached invoice is overdue. Send payment by wire transfer within 24 hours to avoid a penalty."
+  },
+  {
+    "id": "controlled-009",
+    "expected_label": "phishing",
+    "subject": "Unexpected tax refund",
+    "body": "A refund is waiting. Click the link at https://refund.example.invalid and provide your bank and card details to receive it now."
+  },
+  {
+    "id": "controlled-010",
+    "expected_label": "phishing",
+    "subject": "Security alert: unauthorised access",
+    "body": "We detected unauthorised access. Sign in immediately at https://security-review.example.invalid or your account will be locked."
+  },
+  {
+    "id": "controlled-011",
+    "expected_label": "phishing",
+    "subject": "Gift card request from management",
+    "body": "I am in a meeting and need you to act now. Buy gift cards and reply with the codes. Keep this urgent request confidential."
+  },
+  {
+    "id": "controlled-012",
+    "expected_label": "phishing",
+    "subject": "Password reset required",
+    "body": "Your password expires today. Verify your credentials using www.reset-access.example.invalid to prevent the account from being closed."
+  }
+]
+

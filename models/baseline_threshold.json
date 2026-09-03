@@ -1,0 +1,5 @@
+{
+  "threshold": 0.54,
+  "selected_on": "validation",
+  "criterion": "maximum_f1"
+}

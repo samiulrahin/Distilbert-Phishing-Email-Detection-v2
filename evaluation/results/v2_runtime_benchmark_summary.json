@@ -1,0 +1,37 @@
+{
+  "model_name": "distilbert-phishing-email",
+  "model_mode": "distilbert",
+  "model_ready": true,
+  "startup_ms": 6797.109,
+  "cold_first_prediction": {
+    "model_inference_ms": 166.89,
+    "http_end_to_end_ms": 172.08
+  },
+  "warmup_runs": 5,
+  "measured_runs": 60,
+  "model_inference_ms": {
+    "mean": 3.629,
+    "median": 3.531,
+    "p95": 4.26,
+    "min": 3.168,
+    "max": 4.305
+  },
+  "http_end_to_end_ms": {
+    "mean": 13.884,
+    "median": 6.351,
+    "p95": 31.242,
+    "min": 5.198,
+    "max": 31.726
+  },
+  "backend_rss_mb": {
+    "mean": 1066.896,
+    "peak": 1067.238
+  },
+  "controlled_accuracy": 1.0,
+  "decision_counts": {
+    "legitimate": 30,
+    "phishing": 30,
+    "uncertain": 0
+  },
+  "note": "Controlled synthetic workflow emails; not a substitute for held-out public-dataset evaluation."
+}

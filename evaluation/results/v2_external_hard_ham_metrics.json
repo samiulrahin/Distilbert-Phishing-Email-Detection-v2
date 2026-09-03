@@ -1,0 +1,12 @@
+{
+  "source": "https://spamassassin.apache.org/old/publiccorpus/20030228_hard_ham.tar.bz2",
+  "archive_sha256": "ce2ce67880643dbde65ea7f85bffbfe4417349c4bd80b6b0de56262ae6b0a9c9",
+  "corpus_description": "Apache SpamAssassin hard_ham; historical legitimate messages designed to resemble spam.",
+  "parsed_rows_after_exact_overlap_removal": 246,
+  "exact_overlap_rows_removed": 3,
+  "legitimate_rate": 0.8739837398373984,
+  "uncertain_rate": 0.052845528455284556,
+  "false_positive_rate": 0.07317073170731707,
+  "copyright_control": "Raw messages remain local and are not redistributed; output contains hashed source IDs only.",
+  "validity_limit": "The corpus is historical and measures cross-source hard-ham behaviour, not modern Gmail prevalence."
+}

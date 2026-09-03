@@ -1,0 +1,32 @@
+{
+  "model_name": "tfidf-logistic-regression",
+  "model_mode": "baseline",
+  "model_ready": true,
+  "startup_ms": 3316.774,
+  "cold_first_prediction": {
+    "model_inference_ms": 71.561,
+    "http_end_to_end_ms": 75.306
+  },
+  "warmup_runs": 5,
+  "measured_runs": 60,
+  "model_inference_ms": {
+    "mean": 0.449,
+    "median": 0.429,
+    "p95": 0.533,
+    "min": 0.381,
+    "max": 0.614
+  },
+  "http_end_to_end_ms": {
+    "mean": 9.704,
+    "median": 2.504,
+    "p95": 26.442,
+    "min": 2.17,
+    "max": 27.693
+  },
+  "backend_rss_mb": {
+    "mean": 209.142,
+    "peak": 209.703
+  },
+  "controlled_accuracy": 0.75,
+  "note": "Controlled synthetic workflow emails; not a substitute for held-out public-dataset evaluation."
+}

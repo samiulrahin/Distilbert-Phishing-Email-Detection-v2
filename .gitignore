@@ -1,0 +1,29 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.idea/
+.vscode/
+.DS_Store
+tmp/
+
+# Public datasets are downloaded locally and are not redistributed.
+data/raw/*
+!data/raw/README.md
+!data/raw/download_metadata.json
+data/processed/*
+!data/processed/README.md
+data/splits/*.csv
+!data/splits/README.md
+
+# Trained artefacts and generated evidence can be large.
+models/distilbert-phishing-v1/
+models/distilbert-phishing-v2/
+models/*.joblib
+evaluation/results/runtime_log.csv
+evaluation/results/*.tmp
+evaluation/results/setup*.log
+evaluation/results/api_server*.log
+evaluation/results/distilbert_training_error.log

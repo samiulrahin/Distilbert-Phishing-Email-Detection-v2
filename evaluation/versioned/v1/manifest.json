@@ -1,0 +1,18 @@
+{
+  "version": "v1",
+  "status": "immutable baseline snapshot",
+  "snapshot_date": "2026-08-03",
+  "model_sha256": "05fb8784eb484398b13030682a06b71a2c460216c4f379f15b9d8759c19479e2",
+  "model_path": "models/distilbert-phishing-v1/model.safetensors",
+  "decision_threshold": 0.1,
+  "held_out_accuracy": 0.9878188047202132,
+  "held_out_f1": 0.9836567926455567,
+  "live_controlled_gmail_accuracy": 0.75,
+  "live_controlled_gmail_cases": 4,
+  "observed_failures": [
+    "Legitimate controlled receipt classified as phishing.",
+    "Genuine account-security notification classified as phishing."
+  ],
+  "privacy_note": "The runtime log contains metadata only and no raw email text.",
+  "interpretation": "Version 1 is retained to prevent later model changes from erasing the original generalisation evidence."
+}

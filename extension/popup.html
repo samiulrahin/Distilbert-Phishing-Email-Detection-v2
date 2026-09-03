@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mail Risk Lab</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="app-header">
+        <div class="brand">
+          <img src="icons/icon48.png" width="38" height="38" alt="">
+          <div>
+            <h1>Mail Risk Lab</h1>
+            <p>Local phishing analysis</p>
+          </div>
+        </div>
+        <div class="service-state" id="serviceState" title="Local model service status">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span id="serviceText">Checking</span>
+        </div>
+      </header>
+
+      <section class="mode-section" aria-label="Email input mode">
+        <div class="segmented-control" role="tablist" aria-label="Scan source">
+          <button id="gmailTab" class="segment active" role="tab" aria-selected="true" data-mode="gmail">Current email</button>
+          <button id="pasteTab" class="segment" role="tab" aria-selected="false" data-mode="paste">Paste text</button>
+        </div>
+
+        <div id="gmailPanel" class="mode-panel" role="tabpanel">
+          <p class="panel-title">Controlled Gmail message</p>
+          <p class="panel-copy">Scans only the visible subject and body of the open message.</p>
+        </div>
+
+        <div id="pastePanel" class="mode-panel hidden" role="tabpanel">
+          <div class="sample-control">
+            <label for="sampleSelect">Safe example</label>
+            <div class="sample-row">
+              <select id="sampleSelect">
+                <option value="">Choose an example</option>
+                <option value="legitimate">Legitimate meeting</option>
+                <option value="phishing">Urgent account phishing</option>
+                <option value="uncertain">Borderline security notice</option>
+                <option value="limitation">Known false positive</option>
+              </select>
+              <button id="loadSampleButton" class="small-button" type="button">Load</button>
+            </div>
+          </div>
+          <label for="subjectInput">Subject</label>
+          <input id="subjectInput" type="text" maxlength="1000" placeholder="Email subject">
+          <label for="bodyInput">Message body</label>
+          <textarea id="bodyInput" maxlength="50000" rows="6" placeholder="Paste controlled, non-sensitive email text"></textarea>
+          <div class="character-count"><span id="characterCount">0</span> / 50,000</div>
+        </div>
+      </section>
+
+      <button id="scanButton" class="primary-button" type="button">
+        <span class="scan-glyph" aria-hidden="true"></span>
+        <span id="scanButtonText">Scan current email</span>
+      </button>
+      <button id="openDemoButton" class="secondary-button" type="button">Open full demonstration</button>
+
+      <section id="messagePanel" class="message-panel hidden" aria-live="polite"></section>
+
+      <section id="resultPanel" class="result-panel hidden" aria-live="polite">
+        <div class="result-heading">
+          <div id="resultMark" class="result-mark" aria-hidden="true">?</div>
+          <div>
+            <p class="eyebrow">Classification</p>
+            <h2 id="resultLabel">Uncertain</h2>
+          </div>
+        </div>
+
+        <div class="confidence-row">
+          <span>Content-model risk score</span>
+          <strong id="probabilityValue">0%</strong>
+        </div>
+        <div class="confidence-track" aria-hidden="true">
+          <div id="confidenceBar" class="confidence-fill"></div>
+        </div>
+
+        <dl class="metrics-grid">
+          <div>
+            <dt>Inference</dt>
+            <dd id="inferenceValue">0 ms</dd>
+          </div>
+          <div>
+            <dt>Model</dt>
+            <dd id="modelValue">Unknown</dd>
+          </div>
+          <div>
+            <dt>Review band</dt>
+            <dd id="policyValue">--</dd>
+          </div>
+        </dl>
+
+        <p class="limitation">Content analysis only; sender identity, links, SPF, DKIM and DMARC are not verified.</p>
+
+        <div id="signalsSection" class="signals-section hidden">
+          <p class="eyebrow">Observed risk signals</p>
+          <ul id="signalsList"></ul>
+        </div>
+        <p id="limitationText" class="limitation"></p>
+      </section>
+
+      <footer>
+        <span class="privacy-mark" aria-hidden="true">P</span>
+        <span>Processed on this computer. Raw text is not logged.</span>
+      </footer>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>

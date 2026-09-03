@@ -1,0 +1,5 @@
+{
+  "threshold": 0.1,
+  "selected_on": "validation",
+  "criterion": "maximum_f1_with_nearest_0.5_tie_break"
+}

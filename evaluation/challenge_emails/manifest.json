@@ -1,0 +1,20 @@
+{
+  "seed": 240826,
+  "augmentation_candidate_rows": 384,
+  "augmentation_unique_training_rows": 78,
+  "development_rows": 48,
+  "test_rows": 48,
+  "class_balance": "50 percent legitimate, 50 percent phishing",
+  "separation": {
+    "augmentation": "training-only",
+    "development": "policy-selection-only",
+    "test": "untouched-final-evaluation"
+  },
+  "source_basis": {
+    "google_security": "https://support.google.com/accounts/answer/6063333?hl=en",
+    "gift_card": "https://consumer.ftc.gov/consumer-alerts/2026/01/no-thats-not-your-boss-asking-you-buy-gift-cards",
+    "email_authentication": "https://www.rfc-editor.org/info/rfc9989/"
+  },
+  "safety": "No live links, attachments, personal data, or real account content.",
+  "limitation": "Controlled synthetic scenarios support robustness testing but are not representative real-world prevalence data."
+}

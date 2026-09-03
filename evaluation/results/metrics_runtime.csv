@@ -1,0 +1,4 @@
+model,startup_ms,cold_first_end_to_end_ms,inference_mean_ms,inference_p95_ms,end_to_end_mean_ms,end_to_end_p95_ms,rss_mean_mb,rss_peak_mb,controlled_accuracy
+TF-IDF + Logistic Regression,3316.774,75.306,0.449,0.533,9.704,26.442,209.142,209.703,0.75
+DistilBERT V1,7798.379,229.07,5.147,17.234,14.31,30.464,1076.888,1077.309,0.8333
+DistilBERT V2,6797.109,172.08,3.629,4.26,13.884,31.242,1066.896,1067.238,1.0

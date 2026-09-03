@@ -1,0 +1,42 @@
+{
+  "model_name": "distilbert-phishing-email",
+  "model_version": "v2",
+  "temperature": 1.767082,
+  "legitimate_max": 0.29,
+  "phishing_min": 0.865,
+  "calibration": {
+    "raw_log_loss": 0.07598831420840192,
+    "calibrated_log_loss": 0.053863185444820966
+  },
+  "development": {
+    "rows": 48,
+    "coverage": 0.7916666666666666,
+    "selective_accuracy": 1.0,
+    "three_way_exact_accuracy": 0.7916666666666666,
+    "legitimate_precision": 1.0,
+    "phishing_precision": 1.0,
+    "legitimate_predictions": 17,
+    "phishing_predictions": 21,
+    "uncertain_predictions": 10,
+    "false_positive": 0,
+    "false_negative": 0
+  },
+  "untouched_test": {
+    "rows": 48,
+    "coverage": 0.9166666666666666,
+    "selective_accuracy": 0.9772727272727273,
+    "three_way_exact_accuracy": 0.8958333333333334,
+    "legitimate_precision": 1.0,
+    "phishing_precision": 0.96,
+    "legitimate_predictions": 19,
+    "phishing_predictions": 25,
+    "uncertain_predictions": 4,
+    "false_positive": 1,
+    "false_negative": 0
+  },
+  "limitations": [
+    "The challenge set is controlled and synthetic rather than prevalence-representative inbox traffic.",
+    "Policy thresholds were selected on the development challenge and evaluated once on the separate test challenge.",
+    "Content-only analysis cannot authenticate the sender or destination domain."
+  ]
+}

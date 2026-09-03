@@ -1,0 +1,43 @@
+{
+  "generated_at_utc": "2026-08-02T19:21:20.135299+00:00",
+  "scope": "Controlled synthetic faculty demonstration; no personal email data.",
+  "service": {
+    "status": "ok",
+    "model_name": "distilbert-phishing-email",
+    "model_version": "v2",
+    "model_mode": "distilbert",
+    "model_ready": true,
+    "policy_mode": "selective-v2",
+    "privacy": "local-only"
+  },
+  "all_expected_states_matched": true,
+  "cases": [
+    {
+      "id": "faculty-demo-low-risk",
+      "expected_label": "legitimate",
+      "actual_label": "legitimate",
+      "matched": true,
+      "calibrated_risk_score": 0.005687,
+      "raw_model_score": 0.000109,
+      "inference_ms": 19.53
+    },
+    {
+      "id": "faculty-demo-high-risk",
+      "expected_label": "phishing",
+      "actual_label": "phishing",
+      "matched": true,
+      "calibrated_risk_score": 0.988734,
+      "raw_model_score": 0.999632,
+      "inference_ms": 19.873
+    },
+    {
+      "id": "faculty-demo-review",
+      "expected_label": "uncertain",
+      "actual_label": "uncertain",
+      "matched": true,
+      "calibrated_risk_score": 0.646174,
+      "raw_model_score": 0.743502,
+      "inference_ms": 20.8
+    }
+  ]
+}

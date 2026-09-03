@@ -1,0 +1,15 @@
+{
+  "accuracy": 0.9855348306052532,
+  "precision": 0.9825819672131147,
+  "recall": 0.9785714285714285,
+  "f1": 0.9805725971370143,
+  "roc_auc": 0.9989417989417989,
+  "threshold": 0.54,
+  "model": "tfidf-logistic-regression",
+  "split": "held-out-test",
+  "train_rows": 12255,
+  "validation_rows": 2626,
+  "test_rows": 2627,
+  "training_seconds": 8.869,
+  "random_seed": 42
+}

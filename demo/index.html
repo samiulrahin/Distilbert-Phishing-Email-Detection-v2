@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light">
+    <title>Mail Risk Lab</title>
+    <link rel="icon" href="/demo/icon.png">
+    <link rel="stylesheet" href="/demo/static/demo.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="/demo" aria-label="Mail Risk Lab home">
+        <img class="brand-mark" src="/demo/icon.png" width="38" height="38" alt="">
+        <span>
+          <strong>Mail Risk Lab</strong>
+          <small>Local phishing analysis</small>
+        </span>
+      </a>
+      <div class="topbar-actions">
+        <span class="privacy-chip">Local only</span>
+        <span id="serviceState" class="service-state checking" role="status">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span id="serviceText">Checking model</span>
+        </span>
+      </div>
+    </header>
+
+    <main>
+      <section class="workspace" aria-labelledby="workspaceTitle">
+        <div class="workspace-intro">
+          <div>
+            <p class="kicker">Controlled demonstration</p>
+            <h1 id="workspaceTitle">Analyse an email locally</h1>
+            <p>Use a safe example or enter non-sensitive test text. The email stays on this computer.</p>
+          </div>
+          <ol class="steps" aria-label="Analysis steps">
+            <li class="active"><span>1</span>Choose</li>
+            <li><span>2</span>Analyse</li>
+            <li><span>3</span>Review</li>
+          </ol>
+        </div>
+
+        <div class="work-grid">
+          <section class="composer" aria-labelledby="emailInputTitle">
+            <div class="section-heading">
+              <div>
+                <p class="kicker">Email input</p>
+                <h2 id="emailInputTitle">Test message</h2>
+              </div>
+              <button id="resetButton" class="text-button" type="button">Reset</button>
+            </div>
+
+            <div class="sample-picker" aria-labelledby="sampleTitle">
+              <span id="sampleTitle">Safe demonstration examples</span>
+              <div class="sample-buttons" role="group" aria-label="Load an example email">
+                <button class="sample-button" type="button" data-sample="legitimate">Legitimate</button>
+                <button class="sample-button" type="button" data-sample="phishing">Phishing</button>
+                <button class="sample-button" type="button" data-sample="uncertain">Borderline</button>
+                <button class="sample-button" type="button" data-sample="limitation">Known false positive</button>
+              </div>
+            </div>
+
+            <form id="analysisForm">
+              <label for="subjectInput">Subject</label>
+              <input id="subjectInput" name="subject" type="text" maxlength="1000" autocomplete="off" placeholder="Email subject">
+
+              <div class="label-row">
+                <label for="bodyInput">Message body</label>
+                <span><span id="characterCount">0</span> / 50,000</span>
+              </div>
+              <textarea id="bodyInput" name="body" maxlength="50000" rows="10" placeholder="Paste controlled, non-sensitive email text"></textarea>
+
+              <div id="formMessage" class="form-message hidden" role="alert"></div>
+              <button id="analyseButton" class="primary-button" type="submit">
+                <span class="scan-icon" aria-hidden="true"></span>
+                <span id="analyseButtonText">Analyse email</span>
+              </button>
+            </form>
+          </section>
+
+          <section id="resultWorkspace" class="result-workspace empty" aria-labelledby="resultTitle" aria-live="polite">
+            <div id="emptyResult" class="empty-result">
+              <span class="empty-symbol" aria-hidden="true">?</span>
+              <h2 id="resultTitle">Result will appear here</h2>
+              <p>Load a demonstration example, then select <strong>Analyse email</strong>.</p>
+            </div>
+
+            <div id="resultContent" class="result-content hidden">
+              <div class="result-summary">
+                <span id="resultMark" class="result-mark" aria-hidden="true">?</span>
+                <div>
+                  <p class="kicker">Model classification</p>
+                  <h2 id="resultLabel">Uncertain result</h2>
+                  <p id="resultAction" class="result-action"></p>
+                </div>
+              </div>
+
+              <div class="probability-block">
+                <div class="probability-heading">
+                  <span>Content-model risk score</span>
+                  <strong id="probabilityValue">0%</strong>
+                </div>
+                <div class="probability-track" aria-hidden="true">
+                  <span id="legitimateMarker" class="threshold-marker"></span>
+                  <span id="phishingMarker" class="threshold-marker"></span>
+                  <span id="probabilityBar" class="probability-bar"></span>
+                </div>
+                <div class="track-labels"><span>Low</span><span id="thresholdLabel">Review band</span><span>High</span></div>
+              </div>
+
+              <dl class="result-metrics">
+                <div><dt>Inference</dt><dd id="inferenceValue">0 ms</dd></div>
+                <div><dt>Active model</dt><dd id="modelValue">Unknown</dd></div>
+                <div><dt>Privacy</dt><dd>Local only</dd></div>
+              </dl>
+
+              <p class="signal-note">Content analysis only. The sender, destination links, SPF, DKIM and DMARC are not authenticated by this prototype.</p>
+
+              <div id="signalsSection" class="signals-section hidden">
+                <div class="section-heading compact">
+                  <div>
+                    <p class="kicker">Rule-based indicators</p>
+                    <h3>Observed signals</h3>
+                  </div>
+                </div>
+                <ul id="signalsList"></ul>
+                <p class="signal-note">Indicators support review; they are not an explanation of the model decision.</p>
+              </div>
+
+              <p id="limitationText" class="limitation"></p>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="evidence" aria-labelledby="evidenceTitle">
+        <div class="evidence-copy">
+          <p class="kicker">Measured research evidence</p>
+          <h2 id="evidenceTitle">Accuracy and runtime are assessed separately</h2>
+          <p>Held-out public-dataset performance is not presented as real-world Gmail accuracy. Runtime values are from 60 warmed local measurements.</p>
+        </div>
+        <dl class="evidence-metrics">
+          <div><dt>Held-out F1</dt><dd>98.07%</dd><small>2,627 test emails</small></div>
+          <div><dt>HTTP p95</dt><dd>31.24 ms</dd><small>warmed local service</small></div>
+          <div><dt>Mean memory</dt><dd>1,066.90 MB</dd><small>DistilBERT backend</small></div>
+          <div><dt>Challenge decisions</dt><dd>97.73%</dd><small>44 of 48 decided</small></div>
+        </dl>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <span>Academic feasibility prototype</span>
+      <span>Do not use the result as a guarantee that an email is safe.</span>
+    </footer>
+    <script src="/demo/static/demo.js"></script>
+  </body>
+</html>

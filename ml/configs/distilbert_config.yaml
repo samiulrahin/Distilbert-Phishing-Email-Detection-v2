@@ -1,0 +1,14 @@
+base_model: distilbert-base-uncased
+task: binary_sequence_classification
+labels:
+  0: legitimate
+  1: phishing
+random_seed: 42
+split: [0.70, 0.15, 0.15]
+max_length: 256
+epochs: 3
+learning_rate: 0.00002
+weight_decay: 0.01
+per_device_batch_size: 8
+gradient_accumulation_steps: 2
+decision_threshold: 0.50

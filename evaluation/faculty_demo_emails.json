@@ -1,0 +1,20 @@
+[
+  {
+    "id": "faculty-demo-low-risk",
+    "expected_label": "legitimate",
+    "subject": "Project supervision meeting agenda",
+    "body": "Hello, the agenda for our scheduled supervision meeting is available in the course workspace. We will discuss progress, risks, and next steps. Thank you."
+  },
+  {
+    "id": "faculty-demo-high-risk",
+    "expected_label": "phishing",
+    "subject": "Urgent account access expires today",
+    "body": "Your mailbox will be disabled today. Visit https://account-check.example.invalid immediately and enter your password to verify your account."
+  },
+  {
+    "id": "faculty-demo-review",
+    "expected_label": "uncertain",
+    "subject": "Service message: Review of recent account activity",
+    "body": "We noticed a sign-in from a new browser. If you recognise it, you do not need to do anything. Otherwise, visit the service by typing its normal address yourself and check recent activity. Keep this email as a record of the notification."
+  }
+]
