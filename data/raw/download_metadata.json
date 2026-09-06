@@ -1,0 +1,8 @@
+{
+  "status": "downloaded",
+  "path": "F:\\Sam Desert\\phishing-distilbert-gmail-extension\\data\\raw\\Phishing_Email.csv",
+  "bytes": 52034604,
+  "sha256": "18ef4fff1acb8986f0ab01e83ede6025420c829656af5a377560fce17e153b97",
+  "source_url": "https://huggingface.co/datasets/zefang-liu/phishing-email-dataset/resolve/main/Phishing_Email.csv",
+  "accessed_utc": "2026-07-31T11:19:33.935992+00:00"
+}

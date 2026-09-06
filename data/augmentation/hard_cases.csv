@@ -1,0 +1,235 @@
+id,example_id,expected_label,label,scenario,subject,body,text,purpose,provenance
+aug-0209,e660423ae68eb9a1,phishing,1,credential_theft,Urgent: travel account access expires before the office closes,Your travel account will be disabled before the office closes. Sign in at https://example-payments-verify.example.invalid and enter your password immediately to prevent closure.,"Subject: Urgent: travel account access expires before the office closes
+
+Body: Your travel account will be disabled before the office closes. Sign in at https://example-payments-verify.example.invalid and enter your password immediately to prevent closure.",training-only,controlled-synthetic
+aug-0136,beac7c58c92db64e,legitimate,0,account_update,Your monthly Example Campus statement is ready,Your monthly statement is available in the Example Campus application. Open the application directly to view it. This notification does not request payment details or a password.,"Subject: Your monthly Example Campus statement is ready
+
+Body: Your monthly statement is available in the Example Campus application. Open the application directly to view it. This notification does not request payment details or a password.",training-only,controlled-synthetic
+aug-0357,533d6c62d7af2deb,phishing,1,payroll_impersonation,Payroll account must be reconfirmed,"Payroll processing has stopped. Reply with your bank account, date of birth and employee password before the office closes so salary can be released.","Subject: Payroll account must be reconfirmed
+
+Body: Payroll processing has stopped. Reply with your bank account, date of birth and employee password before the office closes so salary can be released.",training-only,controlled-synthetic
+aug-0191,96a41835362ca86d,legitimate,0,newsletter,Service maintenance this weekend,Planned maintenance will affect the cloud storage between 01:00 and 03:00 on Sunday. Existing files and account settings will remain unchanged. Status updates are available in the usual service dashboard.,"Subject: Service maintenance this weekend
+
+Body: Planned maintenance will affect the cloud storage between 01:00 and 03:00 on Sunday. Existing files and account settings will remain unchanged. Status updates are available in the usual service dashboard.",training-only,controlled-synthetic
+aug-0192,fa69fc2607d85eda,legitimate,0,newsletter,Service maintenance this weekend,Planned maintenance will affect the payroll between 01:00 and 03:00 on Sunday. Existing files and account settings will remain unchanged. Status updates are available in the usual service dashboard.,"Subject: Service maintenance this weekend
+
+Body: Planned maintenance will affect the payroll between 01:00 and 03:00 on Sunday. Existing files and account settings will remain unchanged. Status updates are available in the usual service dashboard.",training-only,controlled-synthetic
+aug-0315,51ada6ee4540b88a,phishing,1,attachment_malware,Unpaid invoice escalated,Final notice for invoice INV-6240. Open the attached macro-enabled document and enable editing to see the amount due. Payment must be made before 4 PM.,"Subject: Unpaid invoice escalated
+
+Body: Final notice for invoice INV-6240. Open the attached macro-enabled document and enable editing to see the amount due. Payment must be made before 4 PM.",training-only,controlled-synthetic
+aug-0002,5f4f310a67864fdc,legitimate,0,security_notice,New sign-in to your student portal,"A sign-in from a new tablet near Cardiff was recorded. If this was you, no action is required. If it was not you, open the official student portal application directly and review recent activity. We will never ask for your password by email.","Subject: New sign-in to your student portal
+
+Body: A sign-in from a new tablet near Cardiff was recorded. If this was you, no action is required. If it was not you, open the official student portal application directly and review recent activity. We will never ask for your password by email.",training-only,controlled-synthetic
+aug-0114,1d66b5ceaa7b3e45,legitimate,0,urgent_work,Room change for today's meeting,The meeting has moved to room 2B14 and still starts at 10:00. Please tell the project group before the session begins. No purchase or account action is required.,"Subject: Room change for today's meeting
+
+Body: The meeting has moved to room 2B14 and still starts at 10:00. Please tell the project group before the session begins. No purchase or account action is required.",training-only,controlled-synthetic
+aug-0227,5fed6fc46ff982f5,phishing,1,security_impersonation,Unusual sign-in requires verification,We blocked a sign-in from Cardiff. Confirm your identity at https://security-check.example.invalid and provide your password and one-time code now.,"Subject: Unusual sign-in requires verification
+
+Body: We blocked a sign-in from Cardiff. Confirm your identity at https://security-check.example.invalid and provide your password and one-time code now.",training-only,controlled-synthetic
+aug-0012,521f831dbe219c00,legitimate,0,security_notice,New sign-in to your travel account,"A sign-in from a new tablet near Cardiff was recorded. If this was you, no action is required. If it was not you, open the official travel account application directly and review recent activity. We will never ask for your password by email.","Subject: New sign-in to your travel account
+
+Body: A sign-in from a new tablet near Cardiff was recorded. If this was you, no action is required. If it was not you, open the official travel account application directly and review recent activity. We will never ask for your password by email.",training-only,controlled-synthetic
+aug-0007,0290750c7871a4cf,legitimate,0,security_notice,New sign-in to your mail,"A sign-in from a Windows laptop near Bristol was recorded. If this was you, no action is required. If it was not you, open the official mail application directly and review recent activity. We will never ask for your password by email.","Subject: New sign-in to your mail
+
+Body: A sign-in from a Windows laptop near Bristol was recorded. If this was you, no action is required. If it was not you, open the official mail application directly and review recent activity. We will never ask for your password by email.",training-only,controlled-synthetic
+aug-0168,af60096d72764ae9,legitimate,0,delivery,Parcel delivered to reception,Your parcel was delivered to the main reception desk at 13:20. Bring your identification when collecting it during opening hours. There is no delivery fee outstanding.,"Subject: Parcel delivered to reception
+
+Body: Your parcel was delivered to the main reception desk at 13:20. Bring your identification when collecting it during opening hours. There is no delivery fee outstanding.",training-only,controlled-synthetic
+aug-0348,4d6b15453607c5dd,phishing,1,payroll_impersonation,Payroll account must be reconfirmed,"Payroll processing has stopped. Reply with your bank account, date of birth and employee password before 4 PM so salary can be released.","Subject: Payroll account must be reconfirmed
+
+Body: Payroll processing has stopped. Reply with your bank account, date of birth and employee password before 4 PM so salary can be released.",training-only,controlled-synthetic
+aug-0015,db3d9e5594bcb10a,legitimate,0,security_notice,New sign-in to your library,"A sign-in from a Windows laptop near Bristol was recorded. If this was you, no action is required. If it was not you, open the official library application directly and review recent activity. We will never ask for your password by email.","Subject: New sign-in to your library
+
+Body: A sign-in from a Windows laptop near Bristol was recorded. If this was you, no action is required. If it was not you, open the official library application directly and review recent activity. We will never ask for your password by email.",training-only,controlled-synthetic
+aug-0307,64be706e0edc98f8,phishing,1,refund_theft,Refund waiting for confirmation,A refund of 18.40 GBP is waiting. Submit your card number and security code at https://refund-release.example.invalid before the office closes or the refund will be cancelled.,"Subject: Refund waiting for confirmation
+
+Body: A refund of 18.40 GBP is waiting. Submit your card number and security code at https://refund-release.example.invalid before the office closes or the refund will be cancelled.",training-only,controlled-synthetic
+aug-0046,09d24b912469d492,legitimate,0,security_notice,Security settings changed,Two-step verification settings were updated for your mail. You can review the change from the security page after opening the service normally. Do not reply with credentials or verification codes.,"Subject: Security settings changed
+
+Body: Two-step verification settings were updated for your mail. You can review the change from the security page after opening the service normally. Do not reply with credentials or verification codes.",training-only,controlled-synthetic
+aug-0264,9338624012d972ae,phishing,1,gift_card_bec,Confidential request from the finance manager,"I am in a meeting and need an urgent favour. Buy four gift cards before 4 PM, then reply with photographs of the codes. Keep this request confidential.","Subject: Confidential request from the finance manager
+
+Body: I am in a meeting and need an urgent favour. Buy four gift cards before 4 PM, then reply with photographs of the codes. Keep this request confidential.",training-only,controlled-synthetic
+aug-0225,153f2ab88d5f1ce9,phishing,1,security_impersonation,Unusual sign-in requires verification,We blocked a sign-in from Bristol. Confirm your identity at https://security-check.example.invalid and provide your password and one-time code now.,"Subject: Unusual sign-in requires verification
+
+Body: We blocked a sign-in from Bristol. Confirm your identity at https://security-check.example.invalid and provide your password and one-time code now.",training-only,controlled-synthetic
+aug-0275,cc1da642198a3e23,phishing,1,payment_diversion,Updated bank details for invoice INV-6240,Do not use the bank account on our previous invoice. Transfer 76.25 GBP to the replacement account in the attached instructions before 4 PM and send confirmation.,"Subject: Updated bank details for invoice INV-6240
+
+Body: Do not use the bank account on our previous invoice. Transfer 76.25 GBP to the replacement account in the attached instructions before 4 PM and send confirmation.",training-only,controlled-synthetic
+aug-0383,2a3dc72d30a2aafb,phishing,1,delivery_theft,Delivery held - small fee required,Your parcel is on hold. Pay a redelivery fee of 42.00 GBP at https://parcel-fee.example.invalid within two hours to prevent return to sender.,"Subject: Delivery held - small fee required
+
+Body: Your parcel is on hold. Pay a redelivery fee of 42.00 GBP at https://parcel-fee.example.invalid within two hours to prevent return to sender.",training-only,controlled-synthetic
+aug-0067,2969297993553e8c,legitimate,0,receipt,Payment receipt TX-8821,Your payment of 18.40 GBP was processed successfully. Reference TX-8821. This receipt is for your records and no response is needed.,"Subject: Payment receipt TX-8821
+
+Body: Your payment of 18.40 GBP was processed successfully. Reference TX-8821. This receipt is for your records and no response is needed.",training-only,controlled-synthetic
+aug-0038,ad35f800180ebfee,legitimate,0,security_notice,Security settings changed,Two-step verification settings were updated for your library. You can review the change from the security page after opening the service normally. Do not reply with credentials or verification codes.,"Subject: Security settings changed
+
+Body: Two-step verification settings were updated for your library. You can review the change from the security page after opening the service normally. Do not reply with credentials or verification codes.",training-only,controlled-synthetic
+aug-0378,0e628ad198064fe3,phishing,1,delivery_theft,Delivery held - small fee required,Your parcel is on hold. Pay a redelivery fee of 18.40 GBP at https://parcel-fee.example.invalid before the office closes to prevent return to sender.,"Subject: Delivery held - small fee required
+
+Body: Your parcel is on hold. Pay a redelivery fee of 18.40 GBP at https://parcel-fee.example.invalid before the office closes to prevent return to sender.",training-only,controlled-synthetic
+aug-0281,35880da9ee0b59f5,phishing,1,payment_diversion,Updated bank details for invoice TX-8821,Do not use the bank account on our previous invoice. Transfer 18.40 GBP to the replacement account in the attached instructions before the office closes and send confirmation.,"Subject: Updated bank details for invoice TX-8821
+
+Body: Do not use the bank account on our previous invoice. Transfer 18.40 GBP to the replacement account in the attached instructions before the office closes and send confirmation.",training-only,controlled-synthetic
+aug-0005,39532108c593eca4,legitimate,0,security_notice,New sign-in to your payroll,"A sign-in from a Android phone near Manchester was recorded. If this was you, no action is required. If it was not you, open the official payroll application directly and review recent activity. We will never ask for your password by email.","Subject: New sign-in to your payroll
+
+Body: A sign-in from a Android phone near Manchester was recorded. If this was you, no action is required. If it was not you, open the official payroll application directly and review recent activity. We will never ask for your password by email.",training-only,controlled-synthetic
+aug-0257,424792aedde4c017,phishing,1,gift_card_bec,Confidential request from the operations director,"I am in a meeting and need an urgent favour. Buy four gift cards before the office closes, then reply with photographs of the codes. Keep this request confidential.","Subject: Confidential request from the operations director
+
+Body: I am in a meeting and need an urgent favour. Buy four gift cards before the office closes, then reply with photographs of the codes. Keep this request confidential.",training-only,controlled-synthetic
+aug-0175,0d1fb4c0d0f0efbe,legitimate,0,newsletter,Service maintenance this weekend,Planned maintenance will affect the mail between 01:00 and 03:00 on Sunday. Existing files and account settings will remain unchanged. Status updates are available in the usual service dashboard.,"Subject: Service maintenance this weekend
+
+Body: Planned maintenance will affect the mail between 01:00 and 03:00 on Sunday. Existing files and account settings will remain unchanged. Status updates are available in the usual service dashboard.",training-only,controlled-synthetic
+aug-0349,7b035b29a7082197,phishing,1,payroll_impersonation,Payroll account must be reconfirmed,"Payroll processing has stopped. Reply with your bank account, date of birth and employee password within two hours so salary can be released.","Subject: Payroll account must be reconfirmed
+
+Body: Payroll processing has stopped. Reply with your bank account, date of birth and employee password within two hours so salary can be released.",training-only,controlled-synthetic
+aug-0234,d48a3a4c16009bae,phishing,1,security_impersonation,Unusual sign-in requires verification,We blocked a sign-in from Manchester. Confirm your identity at https://security-check.example.invalid and provide your password and one-time code now.,"Subject: Unusual sign-in requires verification
+
+Body: We blocked a sign-in from Manchester. Confirm your identity at https://security-check.example.invalid and provide your password and one-time code now.",training-only,controlled-synthetic
+aug-0271,ff7d64a842181759,phishing,1,payment_diversion,Updated bank details for invoice PR-1042,Do not use the bank account on our previous invoice. Transfer 2.50 GBP to the replacement account in the attached instructions today and send confirmation.,"Subject: Updated bank details for invoice PR-1042
+
+Body: Do not use the bank account on our previous invoice. Transfer 2.50 GBP to the replacement account in the attached instructions today and send confirmation.",training-only,controlled-synthetic
+aug-0137,1ae25dbf5fe1a503,legitimate,0,account_update,Your monthly Example Payments statement is ready,Your monthly statement is available in the Example Payments application. Open the application directly to view it. This notification does not request payment details or a password.,"Subject: Your monthly Example Payments statement is ready
+
+Body: Your monthly statement is available in the Example Payments application. Open the application directly to view it. This notification does not request payment details or a password.",training-only,controlled-synthetic
+aug-0036,4cdb74fccf746f6c,legitimate,0,security_notice,Security settings changed,Two-step verification settings were updated for your travel account. You can review the change from the security page after opening the service normally. Do not reply with credentials or verification codes.,"Subject: Security settings changed
+
+Body: Two-step verification settings were updated for your travel account. You can review the change from the security page after opening the service normally. Do not reply with credentials or verification codes.",training-only,controlled-synthetic
+aug-0366,f31da6648bdaacd7,phishing,1,delivery_theft,Delivery held - small fee required,Your parcel is on hold. Pay a redelivery fee of 2.50 GBP at https://parcel-fee.example.invalid today to prevent return to sender.,"Subject: Delivery held - small fee required
+
+Body: Your parcel is on hold. Pay a redelivery fee of 2.50 GBP at https://parcel-fee.example.invalid today to prevent return to sender.",training-only,controlled-synthetic
+aug-0215,6ec49acb51e5c823,phishing,1,credential_theft,Urgent: cloud storage access expires within two hours,Your cloud storage will be disabled within two hours. Sign in at https://example-campus-verify.example.invalid and enter your password immediately to prevent closure.,"Subject: Urgent: cloud storage access expires within two hours
+
+Body: Your cloud storage will be disabled within two hours. Sign in at https://example-campus-verify.example.invalid and enter your password immediately to prevent closure.",training-only,controlled-synthetic
+aug-0198,fa6cc9f4f0199985,phishing,1,credential_theft,Urgent: mail access expires today,Your mail will be disabled today. Sign in at https://example-mail-verify.example.invalid and enter your password immediately to prevent closure.,"Subject: Urgent: mail access expires today
+
+Body: Your mail will be disabled today. Sign in at https://example-mail-verify.example.invalid and enter your password immediately to prevent closure.",training-only,controlled-synthetic
+aug-0335,b423e32fe042637f,phishing,1,attachment_malware,Unpaid invoice escalated,Final notice for invoice RC-3107. Open the attached macro-enabled document and enable editing to see the amount due. Payment must be made within two hours.,"Subject: Unpaid invoice escalated
+
+Body: Final notice for invoice RC-3107. Open the attached macro-enabled document and enable editing to see the amount due. Payment must be made within two hours.",training-only,controlled-synthetic
+aug-0059,58ce39bfd9f4ba0a,legitimate,0,receipt,Payment receipt INV-6240,Your payment of 76.25 GBP was processed successfully. Reference INV-6240. This receipt is for your records and no response is needed.,"Subject: Payment receipt INV-6240
+
+Body: Your payment of 76.25 GBP was processed successfully. Reference INV-6240. This receipt is for your records and no response is needed.",training-only,controlled-synthetic
+aug-0202,b67959ad963abf8e,phishing,1,credential_theft,Urgent: travel account access expires before 4 PM,Your travel account will be disabled before 4 PM. Sign in at https://example-cloud-verify.example.invalid and enter your password immediately to prevent closure.,"Subject: Urgent: travel account access expires before 4 PM
+
+Body: Your travel account will be disabled before 4 PM. Sign in at https://example-cloud-verify.example.invalid and enter your password immediately to prevent closure.",training-only,controlled-synthetic
+aug-0362,a12bbc040740a517,phishing,1,delivery_theft,Delivery held - small fee required,Your parcel is on hold. Pay a redelivery fee of 76.25 GBP at https://parcel-fee.example.invalid before 4 PM to prevent return to sender.,"Subject: Delivery held - small fee required
+
+Body: Your parcel is on hold. Pay a redelivery fee of 76.25 GBP at https://parcel-fee.example.invalid before 4 PM to prevent return to sender.",training-only,controlled-synthetic
+aug-0330,c6d7420a9795c7e8,phishing,1,attachment_malware,Unpaid invoice escalated,Final notice for invoice TX-8821. Open the attached macro-enabled document and enable editing to see the amount due. Payment must be made before the office closes.,"Subject: Unpaid invoice escalated
+
+Body: Final notice for invoice TX-8821. Open the attached macro-enabled document and enable editing to see the amount due. Payment must be made before the office closes.",training-only,controlled-synthetic
+aug-0096,5a80277bc76dfa6b,legitimate,0,invoice,Invoice approved for scheduled payment,Invoice INV-6240 has passed the normal approval workflow and is scheduled for payment. Bank details have not changed. Questions should be raised through the finance portal.,"Subject: Invoice approved for scheduled payment
+
+Body: Invoice INV-6240 has passed the normal approval workflow and is scheduled for payment. Bank details have not changed. Questions should be raised through the finance portal.",training-only,controlled-synthetic
+aug-0304,b4d85e132adab73d,phishing,1,refund_theft,Refund waiting for confirmation,A refund of 42.00 GBP is waiting. Submit your card number and security code at https://refund-release.example.invalid within two hours or the refund will be cancelled.,"Subject: Refund waiting for confirmation
+
+Body: A refund of 42.00 GBP is waiting. Submit your card number and security code at https://refund-release.example.invalid within two hours or the refund will be cancelled.",training-only,controlled-synthetic
+aug-0181,4a1e9a9ce718a96c,legitimate,0,newsletter,Service maintenance this weekend,Planned maintenance will affect the library between 01:00 and 03:00 on Sunday. Existing files and account settings will remain unchanged. Status updates are available in the usual service dashboard.,"Subject: Service maintenance this weekend
+
+Body: Planned maintenance will affect the library between 01:00 and 03:00 on Sunday. Existing files and account settings will remain unchanged. Status updates are available in the usual service dashboard.",training-only,controlled-synthetic
+aug-0122,be5cb6e5794f2a10,legitimate,0,account_update,Your monthly Example Cloud statement is ready,Your monthly statement is available in the Example Cloud application. Open the application directly to view it. This notification does not request payment details or a password.,"Subject: Your monthly Example Cloud statement is ready
+
+Body: Your monthly statement is available in the Example Cloud application. Open the application directly to view it. This notification does not request payment details or a password.",training-only,controlled-synthetic
+aug-0042,c648b41f5312e6e7,legitimate,0,security_notice,Security settings changed,Two-step verification settings were updated for your student portal. You can review the change from the security page after opening the service normally. Do not reply with credentials or verification codes.,"Subject: Security settings changed
+
+Body: Two-step verification settings were updated for your student portal. You can review the change from the security page after opening the service normally. Do not reply with credentials or verification codes.",training-only,controlled-synthetic
+aug-0088,5f8b667b23a7fff5,legitimate,0,invoice,Invoice approved for scheduled payment,Invoice RC-3107 has passed the normal approval workflow and is scheduled for payment. Bank details have not changed. Questions should be raised through the finance portal.,"Subject: Invoice approved for scheduled payment
+
+Body: Invoice RC-3107 has passed the normal approval workflow and is scheduled for payment. Bank details have not changed. Questions should be raised through the finance portal.",training-only,controlled-synthetic
+aug-0056,35baf8027f4fe132,legitimate,0,receipt,Payment receipt PR-1042,Your payment of 2.50 GBP was processed successfully. Reference PR-1042. This receipt is for your records and no response is needed.,"Subject: Payment receipt PR-1042
+
+Body: Your payment of 2.50 GBP was processed successfully. Reference PR-1042. This receipt is for your records and no response is needed.",training-only,controlled-synthetic
+aug-0025,8b4c4cd13c0425cf,legitimate,0,security_notice,Security settings changed,Two-step verification settings were updated for your cloud storage. You can review the change from the security page after opening the service normally. Do not reply with credentials or verification codes.,"Subject: Security settings changed
+
+Body: Two-step verification settings were updated for your cloud storage. You can review the change from the security page after opening the service normally. Do not reply with credentials or verification codes.",training-only,controlled-synthetic
+aug-0196,a0a71afaf3434fad,phishing,1,credential_theft,Urgent: cloud storage access expires today,Your cloud storage will be disabled today. Sign in at https://example-mail-verify.example.invalid and enter your password immediately to prevent closure.,"Subject: Urgent: cloud storage access expires today
+
+Body: Your cloud storage will be disabled today. Sign in at https://example-mail-verify.example.invalid and enter your password immediately to prevent closure.",training-only,controlled-synthetic
+aug-0278,f417ab32cc452720,phishing,1,payment_diversion,Updated bank details for invoice RC-3107,Do not use the bank account on our previous invoice. Transfer 42.00 GBP to the replacement account in the attached instructions within two hours and send confirmation.,"Subject: Updated bank details for invoice RC-3107
+
+Body: Do not use the bank account on our previous invoice. Transfer 42.00 GBP to the replacement account in the attached instructions within two hours and send confirmation.",training-only,controlled-synthetic
+aug-0205,4e36fa8701034f5e,phishing,1,credential_theft,Urgent: library access expires within two hours,Your library will be disabled within two hours. Sign in at https://example-campus-verify.example.invalid and enter your password immediately to prevent closure.,"Subject: Urgent: library access expires within two hours
+
+Body: Your library will be disabled within two hours. Sign in at https://example-campus-verify.example.invalid and enter your password immediately to prevent closure.",training-only,controlled-synthetic
+aug-0090,1936629aa6ee4bc4,legitimate,0,invoice,Invoice approved for scheduled payment,Invoice TX-8821 has passed the normal approval workflow and is scheduled for payment. Bank details have not changed. Questions should be raised through the finance portal.,"Subject: Invoice approved for scheduled payment
+
+Body: Invoice TX-8821 has passed the normal approval workflow and is scheduled for payment. Bank details have not changed. Questions should be raised through the finance portal.",training-only,controlled-synthetic
+aug-0232,d51030f7dc125462,phishing,1,security_impersonation,Unusual sign-in requires verification,We blocked a sign-in from London. Confirm your identity at https://security-check.example.invalid and provide your password and one-time code now.,"Subject: Unusual sign-in requires verification
+
+Body: We blocked a sign-in from London. Confirm your identity at https://security-check.example.invalid and provide your password and one-time code now.",training-only,controlled-synthetic
+aug-0296,32f561e81e76fed6,phishing,1,refund_theft,Refund waiting for confirmation,A refund of 2.50 GBP is waiting. Submit your card number and security code at https://refund-release.example.invalid today or the refund will be cancelled.,"Subject: Refund waiting for confirmation
+
+Body: A refund of 2.50 GBP is waiting. Submit your card number and security code at https://refund-release.example.invalid today or the refund will be cancelled.",training-only,controlled-synthetic
+aug-0079,2ca0667e6973caf2,legitimate,0,invoice,Invoice approved for scheduled payment,Invoice PR-1042 has passed the normal approval workflow and is scheduled for payment. Bank details have not changed. Questions should be raised through the finance portal.,"Subject: Invoice approved for scheduled payment
+
+Body: Invoice PR-1042 has passed the normal approval workflow and is scheduled for payment. Bank details have not changed. Questions should be raised through the finance portal.",training-only,controlled-synthetic
+aug-0340,b3b94bee069eb8d2,phishing,1,payroll_impersonation,Payroll account must be reconfirmed,"Payroll processing has stopped. Reply with your bank account, date of birth and employee password today so salary can be released.","Subject: Payroll account must be reconfirmed
+
+Body: Payroll processing has stopped. Reply with your bank account, date of birth and employee password today so salary can be released.",training-only,controlled-synthetic
+aug-0316,164c8a9672e8df3d,phishing,1,attachment_malware,Unpaid invoice escalated,Final notice for invoice PR-1042. Open the attached macro-enabled document and enable editing to see the amount due. Payment must be made today.,"Subject: Unpaid invoice escalated
+
+Body: Final notice for invoice PR-1042. Open the attached macro-enabled document and enable editing to see the amount due. Payment must be made today.",training-only,controlled-synthetic
+aug-0211,4c69689dc1a33149,phishing,1,credential_theft,Urgent: student portal access expires before the office closes,Your student portal will be disabled before the office closes. Sign in at https://example-payments-verify.example.invalid and enter your password immediately to prevent closure.,"Subject: Urgent: student portal access expires before the office closes
+
+Body: Your student portal will be disabled before the office closes. Sign in at https://example-payments-verify.example.invalid and enter your password immediately to prevent closure.",training-only,controlled-synthetic
+aug-0018,e0b650288a4029e2,legitimate,0,security_notice,New sign-in to your student portal,"A sign-in from a Android phone near Manchester was recorded. If this was you, no action is required. If it was not you, open the official student portal application directly and review recent activity. We will never ask for your password by email.","Subject: New sign-in to your student portal
+
+Body: A sign-in from a Android phone near Manchester was recorded. If this was you, no action is required. If it was not you, open the official student portal application directly and review recent activity. We will never ask for your password by email.",training-only,controlled-synthetic
+aug-0049,c6ec7a22d6aa1101,legitimate,0,receipt,Payment receipt RC-3107,Your payment of 42.00 GBP was processed successfully. Reference RC-3107. This receipt is for your records and no response is needed.,"Subject: Payment receipt RC-3107
+
+Body: Your payment of 42.00 GBP was processed successfully. Reference RC-3107. This receipt is for your records and no response is needed.",training-only,controlled-synthetic
+aug-0187,f0d6fdb00de7bfcd,legitimate,0,newsletter,Service maintenance this weekend,Planned maintenance will affect the student portal between 01:00 and 03:00 on Sunday. Existing files and account settings will remain unchanged. Status updates are available in the usual service dashboard.,"Subject: Service maintenance this weekend
+
+Body: Planned maintenance will affect the student portal between 01:00 and 03:00 on Sunday. Existing files and account settings will remain unchanged. Status updates are available in the usual service dashboard.",training-only,controlled-synthetic
+aug-0014,8b88fdd596f21802,legitimate,0,security_notice,New sign-in to your library,"A sign-in from a Mac browser near London was recorded. If this was you, no action is required. If it was not you, open the official library application directly and review recent activity. We will never ask for your password by email.","Subject: New sign-in to your library
+
+Body: A sign-in from a Mac browser near London was recorded. If this was you, no action is required. If it was not you, open the official library application directly and review recent activity. We will never ask for your password by email.",training-only,controlled-synthetic
+aug-0020,0fa2e87a9e5ef4c2,legitimate,0,security_notice,New sign-in to your travel account,"A sign-in from a Android phone near Manchester was recorded. If this was you, no action is required. If it was not you, open the official travel account application directly and review recent activity. We will never ask for your password by email.","Subject: New sign-in to your travel account
+
+Body: A sign-in from a Android phone near Manchester was recorded. If this was you, no action is required. If it was not you, open the official travel account application directly and review recent activity. We will never ask for your password by email.",training-only,controlled-synthetic
+aug-0003,9631777895296b1d,legitimate,0,security_notice,New sign-in to your payroll,"A sign-in from a new tablet near Cardiff was recorded. If this was you, no action is required. If it was not you, open the official payroll application directly and review recent activity. We will never ask for your password by email.","Subject: New sign-in to your payroll
+
+Body: A sign-in from a new tablet near Cardiff was recorded. If this was you, no action is required. If it was not you, open the official payroll application directly and review recent activity. We will never ask for your password by email.",training-only,controlled-synthetic
+aug-0001,93415a73a3bbbe10,legitimate,0,security_notice,New sign-in to your cloud storage,"A sign-in from a Mac browser near London was recorded. If this was you, no action is required. If it was not you, open the official cloud storage application directly and review recent activity. We will never ask for your password by email.","Subject: New sign-in to your cloud storage
+
+Body: A sign-in from a Mac browser near London was recorded. If this was you, no action is required. If it was not you, open the official cloud storage application directly and review recent activity. We will never ask for your password by email.",training-only,controlled-synthetic
+aug-0128,18d46d69d341a02c,legitimate,0,account_update,Your monthly Example Mail statement is ready,Your monthly statement is available in the Example Mail application. Open the application directly to view it. This notification does not request payment details or a password.,"Subject: Your monthly Example Mail statement is ready
+
+Body: Your monthly statement is available in the Example Mail application. Open the application directly to view it. This notification does not request payment details or a password.",training-only,controlled-synthetic
+aug-0241,e7581121309d51bf,phishing,1,gift_card_bec,Confidential request from the course leader,"I am in a meeting and need an urgent favour. Buy four gift cards within two hours, then reply with photographs of the codes. Keep this request confidential.","Subject: Confidential request from the course leader
+
+Body: I am in a meeting and need an urgent favour. Buy four gift cards within two hours, then reply with photographs of the codes. Keep this request confidential.",training-only,controlled-synthetic
+aug-0180,0de5cffee5914f77,legitimate,0,newsletter,Service maintenance this weekend,Planned maintenance will affect the travel account between 01:00 and 03:00 on Sunday. Existing files and account settings will remain unchanged. Status updates are available in the usual service dashboard.,"Subject: Service maintenance this weekend
+
+Body: Planned maintenance will affect the travel account between 01:00 and 03:00 on Sunday. Existing files and account settings will remain unchanged. Status updates are available in the usual service dashboard.",training-only,controlled-synthetic
+aug-0247,0529236198ef0ef2,phishing,1,gift_card_bec,Confidential request from the department head,"I am in a meeting and need an urgent favour. Buy four gift cards today, then reply with photographs of the codes. Keep this request confidential.","Subject: Confidential request from the department head
+
+Body: I am in a meeting and need an urgent favour. Buy four gift cards today, then reply with photographs of the codes. Keep this request confidential.",training-only,controlled-synthetic
+aug-0048,3d0bc3f353ff472b,legitimate,0,security_notice,Security settings changed,Two-step verification settings were updated for your payroll. You can review the change from the security page after opening the service normally. Do not reply with credentials or verification codes.,"Subject: Security settings changed
+
+Body: Two-step verification settings were updated for your payroll. You can review the change from the security page after opening the service normally. Do not reply with credentials or verification codes.",training-only,controlled-synthetic
+aug-0009,64fc9e018b81df3e,legitimate,0,security_notice,New sign-in to your cloud storage,"A sign-in from a Windows laptop near Bristol was recorded. If this was you, no action is required. If it was not you, open the official cloud storage application directly and review recent activity. We will never ask for your password by email.","Subject: New sign-in to your cloud storage
+
+Body: A sign-in from a Windows laptop near Bristol was recorded. If this was you, no action is required. If it was not you, open the official cloud storage application directly and review recent activity. We will never ask for your password by email.",training-only,controlled-synthetic
+aug-0208,445d40f0bc18c9ea,phishing,1,credential_theft,Urgent: mail access expires within two hours,Your mail will be disabled within two hours. Sign in at https://example-campus-verify.example.invalid and enter your password immediately to prevent closure.,"Subject: Urgent: mail access expires within two hours
+
+Body: Your mail will be disabled within two hours. Sign in at https://example-campus-verify.example.invalid and enter your password immediately to prevent closure.",training-only,controlled-synthetic
+aug-0291,54256dff721358d8,phishing,1,refund_theft,Refund waiting for confirmation,A refund of 76.25 GBP is waiting. Submit your card number and security code at https://refund-release.example.invalid before 4 PM or the refund will be cancelled.,"Subject: Refund waiting for confirmation
+
+Body: A refund of 76.25 GBP is waiting. Submit your card number and security code at https://refund-release.example.invalid before 4 PM or the refund will be cancelled.",training-only,controlled-synthetic
+aug-0194,765956fe09dba033,phishing,1,credential_theft,Urgent: student portal access expires before 4 PM,Your student portal will be disabled before 4 PM. Sign in at https://example-cloud-verify.example.invalid and enter your password immediately to prevent closure.,"Subject: Urgent: student portal access expires before 4 PM
+
+Body: Your student portal will be disabled before 4 PM. Sign in at https://example-cloud-verify.example.invalid and enter your password immediately to prevent closure.",training-only,controlled-synthetic
+aug-0197,d7c9d6a0c6cdc19e,phishing,1,credential_theft,Urgent: payroll access expires before the office closes,Your payroll will be disabled before the office closes. Sign in at https://example-payments-verify.example.invalid and enter your password immediately to prevent closure.,"Subject: Urgent: payroll access expires before the office closes
+
+Body: Your payroll will be disabled before the office closes. Sign in at https://example-payments-verify.example.invalid and enter your password immediately to prevent closure.",training-only,controlled-synthetic
+aug-0216,d7d6b861102f2ac4,phishing,1,credential_theft,Urgent: payroll access expires before 4 PM,Your payroll will be disabled before 4 PM. Sign in at https://example-cloud-verify.example.invalid and enter your password immediately to prevent closure.,"Subject: Urgent: payroll access expires before 4 PM
+
+Body: Your payroll will be disabled before 4 PM. Sign in at https://example-cloud-verify.example.invalid and enter your password immediately to prevent closure.",training-only,controlled-synthetic
+aug-0207,2f08fc20933dbeb8,phishing,1,credential_theft,Urgent: library access expires today,Your library will be disabled today. Sign in at https://example-mail-verify.example.invalid and enter your password immediately to prevent closure.,"Subject: Urgent: library access expires today
+
+Body: Your library will be disabled today. Sign in at https://example-mail-verify.example.invalid and enter your password immediately to prevent closure.",training-only,controlled-synthetic
+aug-0022,e389fe053673040a,legitimate,0,security_notice,New sign-in to your mail,"A sign-in from a Mac browser near London was recorded. If this was you, no action is required. If it was not you, open the official mail application directly and review recent activity. We will never ask for your password by email.","Subject: New sign-in to your mail
+
+Body: A sign-in from a Mac browser near London was recorded. If this was you, no action is required. If it was not you, open the official mail application directly and review recent activity. We will never ask for your password by email.",training-only,controlled-synthetic

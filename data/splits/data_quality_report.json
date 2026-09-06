@@ -1,0 +1,20 @@
+{
+  "initial_rows": 18650,
+  "invalid_label_rows_removed": 0,
+  "empty_or_short_rows_removed": 557,
+  "conflicting_label_rows_removed": 0,
+  "exact_duplicates_removed": 585,
+  "final_rows": 17508,
+  "class_distribution": {
+    "0": 10975,
+    "1": 6533
+  },
+  "source_text_column": "Email Text",
+  "source_label_column": "Email Type",
+  "split_seed": 42,
+  "split_rows": {
+    "train": 12255,
+    "validation": 2626,
+    "test": 2627
+  }
+}
